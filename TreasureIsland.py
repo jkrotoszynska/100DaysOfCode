@@ -31,16 +31,16 @@ if(direction == "left"):
         if(door == "blue" or door == "red"):
             print("You enter a room of beasts. Game Over!")
         elif(door == "yellow"):
-            print("You Win!")
+             print("You found the treasure! You Win!")
         else:
             print("error")
             exit
     elif(decision == "swim"):
-        print("Game Over!")
+        print("You get attacked by an angry trout. Game Over.")
     else:
         print("error")
         exit
 elif(direction == "right"):
-    print("You fell inmto a hole. Game Over!")
+    print("You fell into a hole. Game Over!")
 else:
     print("error")
