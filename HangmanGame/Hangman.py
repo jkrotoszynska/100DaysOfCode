@@ -1,4 +1,5 @@
 import random
+import os
 import Hangman_words
 from Hangman_art import stages, hangman
 
@@ -17,7 +18,9 @@ for _ in range(len(chosen_word)):
      display.append("_")
 
 while display != chosen_word:
+     
      guess = input("Guess a letter: ").lower()
+     os.system('cls')
 
      if guess in display:
           print("The letter has been guessed")
