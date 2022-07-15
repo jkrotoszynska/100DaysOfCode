@@ -1,6 +1,4 @@
-import random
-
-print('''
+hangman = ('''
 888                                                           
 888                                                           
 888                                                           
@@ -71,38 +69,3 @@ stages = ['''
       |
 =========
 ''']
-
-
-end_of_game = False
-word_list = ["aardvark", "baboon", "camel", "cow", "apple", "watermelon", "bathtube", "happy", "unicorn", "button", "pillow"]
-chosen_word = random.choice(word_list)
-chosen_word = list(chosen_word)
-word_length = len(chosen_word)
-
-lives = 6
-
-display = []
-for _ in range(len(chosen_word)):
-     display.append("_")
-
-while display != chosen_word:
-     guess = input("Guess a letter: ").lower()
-
-     if guess not in chosen_word:
-          lives -= 1
-          print(stages[lives])
-          
-          if lives == 0:
-               print("You lose...")
-               print(f"The word was: {''.join(chosen_word)}")
-               exit()
-
-     for position in range(word_length):
-          letter = chosen_word[position]
-          if letter == guess:
-            display[position] = letter
-
-     print(''.join(display))
-     
-     if(display == chosen_word):
-          print("You win!")
