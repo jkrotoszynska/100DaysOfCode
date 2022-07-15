@@ -17,11 +17,9 @@ print('''
 ''')
 
 #Step 2 
-
 word_list = ["aardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
 chosen_word = list(chosen_word)
-print(chosen_word)
 
 #TODO-1: - Create an empty List called display.
 #For each letter in the chosen_word, add a "_" to 'display'.
