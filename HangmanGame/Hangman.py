@@ -1,8 +1,8 @@
 import random
-import Hangman_art
 import Hangman_words
+from Hangman_art import stages, hangman
 
-print(Hangman_art.hangman)
+print(hangman)
 
 end_of_game = False
 word_list = Hangman_words.word_list
@@ -25,7 +25,7 @@ while display != chosen_word:
 
      if guess not in chosen_word:
           lives -= 1
-          print(Hangman_art.stages[lives])
+          print(stages[lives])
           print(f"Letter {guess} is not in the word")
           
           if lives == 0:
