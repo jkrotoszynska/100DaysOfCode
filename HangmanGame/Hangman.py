@@ -26,6 +26,7 @@ while display != chosen_word:
      if guess not in chosen_word:
           lives -= 1
           print(Hangman_art.stages[lives])
+          print(f"Letter {guess} is not in the word")
           
           if lives == 0:
                print("You lose...")
