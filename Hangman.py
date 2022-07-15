@@ -101,7 +101,7 @@ while display != chosen_word:
           if letter == guess:
             display[position] = letter
 
-     print(display)
+     print(''.join(display))
      
      if(display == chosen_word):
           print("You win!")
