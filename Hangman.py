@@ -1,6 +1,4 @@
-from operator import le
 import random
-from re import A
 
 print('''
 888                                                           
