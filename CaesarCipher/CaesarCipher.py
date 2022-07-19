@@ -24,13 +24,16 @@ def decrypt(plain_text, shift_amount):
 
 def caesar(start_text, shift_amount, direction):
     end_text=""
+
+    if(direction == "decode"):
+            shift_amount *= -1
+
     for letter in start_text:
         position = alphabet.index(letter)
-        if(direction == "decode"):
-            shift_amount *= -1
         new_position = position + shift_amount
         new_letter = alphabet[new_position]
         end_text += new_letter
+        
     print(f"The {direction}d text is {end_text}")
 
 print(logo)
