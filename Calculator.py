@@ -32,7 +32,9 @@ first_number = int(input("What's the first number?: "))
 for symbol in operations:
     print(symbol)
 
-chosen_operation = input("Pick an operation: ")
+chosen_operation = input("Pick an operation from the line above: ")
 second_number = int(input("What's the next number?: "))
-result = ...
+result = operations[chosen_operation]
+result = result(first_number, second_number)
+print(f"{first_number} {chosen_operation} {second_number} = {result}")
 decision = input(f"Type 'y' to continue calculating witch {result}, or type 'n' to start a new calculation: ")
