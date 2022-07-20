@@ -16,18 +16,16 @@ print("Welcomde to the secret auction program.")
 
 bids = {}
 auction = True
-values = []
 
 def find_highest_bidder(bidding_record):
-  for bidder in bidding_record:
-    values.append(bidding_record[bidder])
-  
   max = 0
-  for val in values:
-    if(val > max):
-      max = val
-
-  print(max)
+  for bidder in bidding_record:
+    bid = (bidding_record[bidder])
+    if(bid > max):
+      max = bid
+      bidder_max = bidder
+    
+  print(f"The winner is {bidder_max} with a bid of ${max}")
 
 while auction:
   bidder_name = input("What is your name?: ")
@@ -44,4 +42,3 @@ while auction:
   else:
     os.system('cls')
     print("Error... Try Again...")
-    decision = input("Are there any other bidders? Type 'yes' or 'no'. \n").lower()
