@@ -36,7 +36,6 @@ while auction:
     auction = False
     os.system('cls')
     find_highest_bidder(bids)
-    #print(bids)
   elif(decision == "yes"):
     os.system('cls')
   else:
