@@ -1,4 +1,5 @@
 from operator import is_
+import os
 import art
 import random
 
@@ -20,9 +21,9 @@ def game():
     def compare(user_score, computer_score):
         if(user_score == computer_score):
             return("Is's a draw!")
-        elif(computer_score == 0 or user_score > 21):
+        elif(computer_score == 21 or user_score > 21):
             return("You lose...")
-        elif(user_score == 0 or computer_score > 21 or user_score > computer_score):
+        elif(user_score == 21 or computer_score > 21 or user_score > computer_score):
             return("You win!")
 
     print(art.logo)
@@ -61,4 +62,5 @@ def game():
 
 
 while(input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y"):
+    os.system('cls')
     game()
