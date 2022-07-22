@@ -2,28 +2,28 @@ from operator import is_
 import art
 import random
 
-def deal_card():
-    cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-    card = random.choice(cards)
-    return card
-
-def calculate_score(cards):
-    if(sum(cards) > 21 and len(cards) == 2):
-        return 0
-    if(11 in cards and sum(cards) > 21):
-        cards.remove(11)
-        cards.append(1)
-    return sum(cards)
-
-def compare(user_score, computer_score):
-    if(user_score == computer_score):
-        return("Is's a draw!")
-    elif(computer_score == 0 or user_score > 21):
-        return("You lose...")
-    elif(user_score == 0 or computer_score > 21 or user_score > computer_score):
-        return("You win!")
-
 def game():
+
+    def deal_card():
+        cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+        card = random.choice(cards)
+        return card
+
+    def calculate_score(cards):
+        if(sum(cards) > 21 and len(cards) == 2):
+            return 0
+        if(11 in cards and sum(cards) > 21):
+            cards.remove(11)
+            cards.append(1)
+        return sum(cards)
+
+    def compare(user_score, computer_score):
+        if(user_score == computer_score):
+            return("Is's a draw!")
+        elif(computer_score == 0 or user_score > 21):
+            return("You lose...")
+        elif(user_score == 0 or computer_score > 21 or user_score > computer_score):
+            return("You win!")
 
     print(art.logo)
 
