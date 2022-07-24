@@ -26,7 +26,6 @@ def game():
     print("I'm thinking of a number betweem 1 and 100.")
 
     attempts = difficulty()
-    print(f"You have {attempts} attempts remaining to guess the number.")
 
     guessing_number = 0
     while guessing_number != number:
