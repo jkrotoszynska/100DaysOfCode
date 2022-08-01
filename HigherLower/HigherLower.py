@@ -3,6 +3,12 @@ import art
 from game_data import data
 import random
 
+def printable_format(account):
+    name = account["name"]
+    description = account["description"]
+    country = account["country"]
+    return(f" {name}, a {description}, from {country}")
+
 print(art.logo)
 
 account_a = random.choice(data)
@@ -11,20 +17,13 @@ while account_a == account_b:
     account_b = random.choice(data)
 
 # Format the account data into printable format
-name = account_a["name"]
-description = account_a["description"]
-country = account_a["country"]
-print(f"Compare A: {name}, {description}, from {country}")
 
+print(f"Compare A:{printable_format(account_a)}")
 print(art.vs)
-
-name = account_b["name"]
-description = account_b["description"]
-country = account_b["country"]
-print(f"Compare B: {name}, a {description}, from {country}")
+print(f"Compare B:{printable_format(account_b)}")
 
 # Ask user for a guess
-print("Who has more followers? Type 'A' or 'B': ")
+decision = input("Who has more followers? Type 'A' or 'B': ")
 
 # Check if user is correct
 #   Get follower count of each account
