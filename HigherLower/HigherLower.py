@@ -21,7 +21,7 @@ print(art.vs)
 name = account_b["name"]
 description = account_b["description"]
 country = account_b["country"]
-print(f"Compare B: {name}, {description}, from {country}")
+print(f"Compare B: {name}, a {description}, from {country}")
 
 # Ask user for a guess
 print("Who has more followers? Type 'A' or 'B': ")
