@@ -16,14 +16,12 @@ account_b = random.choice(data)
 while account_a == account_b:
     account_b = random.choice(data)
 
-# Format the account data into printable format
-
 print(f"Compare A:{printable_format(account_a)}")
 print(art.vs)
 print(f"Compare B:{printable_format(account_b)}")
 
-# Ask user for a guess
 decision = input("Who has more followers? Type 'A' or 'B': ")
+
 
 # Check if user is correct
 #   Get follower count of each account
