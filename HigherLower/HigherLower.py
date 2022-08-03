@@ -38,9 +38,11 @@ while game_should_continue:
 
     is_correct = check_answer(guess, a_followers_count, b_followers_count)
 
+    os.system('cls')
+    print(art.logo)
+
     if is_correct:
         score += 1
-        os.system('cls')
         print(f"You're right! Current score: {score}")
     else:
         game_should_continue = False
