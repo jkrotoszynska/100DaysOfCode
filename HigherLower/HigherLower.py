@@ -22,6 +22,7 @@ game_should_continue = True
 account_b = random.choice(data)
 
 while game_should_continue:
+
     account_a = account_b
     while account_a == account_b:
         account_b = random.choice(data)
@@ -39,9 +40,8 @@ while game_should_continue:
 
     if is_correct:
         score += 1
-        print(f"You're right! Current score: {score}")
-        game_should_continue = True
         os.system('cls')
+        print(f"You're right! Current score: {score}")
     else:
-        print(f"You lose... Final score: {score}")
         game_should_continue = False
+        print(f"You lose... Final score: {score}")
