@@ -66,6 +66,9 @@ is_on = True
 money = 0
 
 while is_on:
+
+    for item in
+
     coffee = input("What would you like? (espresso/latte/cappuccino): ")
 
     if coffee == "report":
@@ -76,7 +79,8 @@ while is_on:
     elif coffee == "exit":
         is_on = False
     elif coffee == "espresso" or coffee == "latte" or coffee == "cappuccino":
-        used_ingredients(coffee)
+        if used_ingredients(coffee) == True:
+            print(f"Here is your {coffee} ☕️. Enjoy!")
 
 # Check resources sufficient?
 # Process coins.
