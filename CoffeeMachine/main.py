@@ -30,3 +30,12 @@ resources = {
     "coffee": 100,
 }
 
+### STEPS
+
+# Prompt user by asking “What would you like?
+# Turn off the Coffee Machine by entering “off” to the prompt
+# Print report
+# Check resources sufficient?
+# Process coins.
+# Check transaction successful?
+# Make Coffee
