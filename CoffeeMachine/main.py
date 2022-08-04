@@ -32,7 +32,13 @@ resources = {
 
 ### STEPS
 
-# Prompt user by asking “What would you like?
+# Prompt user by asking What would you like?
+
+coffee = input("What would you like? (espresso/latte/cappuccino): ")
+
+if coffee == "report":
+    print(resources)
+
 # Turn off the Coffee Machine by entering “off” to the prompt
 # Print report
 # Check resources sufficient?
