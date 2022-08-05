@@ -30,21 +30,20 @@ resources = {
     "coffee": 100,
 }
 
-money = {
-    "quarters": 0.25,
-    "dimes": 0.10,
-    "nickles": 0.05,
-    "pennies": 0.01
-}
-
 
 def check_ingredients(order_ingredients):
     for item in order_ingredients:
         if order_ingredients[item] > resources[item]:
             print(f"Sorry there is not enough {item}")
 
-#def process_coin():
 
+def process_coin():
+    print("Please insert coins.")
+    total = input("How many quarters: ") * 0.25
+    total += input("How many dimes: ") * 0.10
+    total += input("How many nickles: ") * 0.05
+    total += input("How many pennies: ") * 0.01
+    return total
 
 #def transaction():
 
@@ -72,7 +71,7 @@ while is_on:
     elif choice in ["espresso", "latte", "cappuccino"]:
         drink = MENU[choice]
         check_ingredients(drink["ingredients"])
-        #process_coin()
+        process_coin()
         #transaction()
         make_coffee(choice, drink["ingredients"])
 
