@@ -37,52 +37,42 @@ money = {
     "pennies": 0.01
 }
 
-def used_ingredients(name_of_coffee):
 
-    if name_of_coffee == "latte" or name_of_coffee == "cappuccino":
-        if resources["water"] < MENU[name_of_coffee]["ingredients"]["water"]:
-            print("Sorry there is not enough water")
-        elif resources["milk"] < MENU[name_of_coffee]["ingredients"]["milk"]:
-            print("Sorry there is not enough milk")
-        elif resources["coffee"] < MENU[name_of_coffee]["ingredients"]["coffee"]:
-            print("Sorry there is not enough coffee")
+def check_ingredients(order_ingredients):
+    for item in order_ingredients:
+        if order_ingredients[item] > resources[item]:
+            print(f"Sorry there is not enough {item}")
 
-        resources["water"] = resources["water"] - MENU[name_of_coffee]["ingredients"]["water"]
-        resources["milk"] = resources["milk"] - MENU[name_of_coffee]["ingredients"]["milk"]
-        resources["coffee"] = resources["coffee"] - MENU[name_of_coffee]["ingredients"]["coffee"]
+#def process_coin():
 
-    elif name_of_coffee == "espresso":
-        if resources["water"] < MENU[name_of_coffee]["ingredients"]["water"]:
-            print("Sorry there is not enough water")
-        elif resources["coffee"] < MENU[name_of_coffee]["ingredients"]["coffee"]:
-            print("Sorry there is not enough coffee")
 
-        resources["water"] = resources["water"] - MENU[name_of_coffee]["ingredients"]["water"]
-        resources["coffee"] = resources["coffee"] - MENU[name_of_coffee]["ingredients"]["coffee"]
+#def transaction():
 
+def make_coffee(drink_name, order_ingredients):
+    for item in order_ingredients:
+        resources[item] -= order_ingredients[item]
+    print(f"Here is your {drink_name} ☕️. Enjoy!")
 
 
 is_on = True
 money = 0
 
+
 while is_on:
 
-    for item in
+    choice = input("What would you like? (espresso/latte/cappuccino): ")
 
-    coffee = input("What would you like? (espresso/latte/cappuccino): ")
-
-    if coffee == "report":
+    if choice == "report":
         print(f"Water: {resources['water']}ml")
         print(f"Milk: {resources['milk']}ml")
         print(f"Coffee: {resources['coffee']}g")
         print(f"Money: ${money}")
-    elif coffee == "exit":
+    elif choice == "exit":
         is_on = False
-    elif coffee == "espresso" or coffee == "latte" or coffee == "cappuccino":
-        if used_ingredients(coffee) == True:
-            print(f"Here is your {coffee} ☕️. Enjoy!")
+    elif choice in ["espresso", "latte", "cappuccino"]:
+        drink = MENU[choice]
+        check_ingredients(drink["ingredients"])
+        #process_coin()
+        #transaction()
+        make_coffee(choice, drink["ingredients"])
 
-# Check resources sufficient?
-# Process coins.
-# Check transaction successful?
-# Make Coffee
