@@ -5,5 +5,5 @@ from money_machine import MoneyMachine
 # print report
 # check resources sufficient
 # process coins
-# check transaction successfuly
+# check transaction successful
 # make coffee
