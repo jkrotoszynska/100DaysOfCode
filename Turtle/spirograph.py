@@ -14,16 +14,15 @@ def random_color():
     return random_color
 
 
-def spirograph(numbers):
-    angle = 360 / numbers
-    for x in range(1,numbers):
+def spirograph(size_of_gap):
+    for _ in range(int(360 / size_of_gap)):
         turtle.color(random_color())
         turtle.circle(100)
-        turtle.setheading(x*angle)
+        turtle.setheading(turtle.heading() + size_of_gap)
 
 screen = t.Screen()
 screen.setup(width=1.0, height=1.0, startx=None, starty=None)
 
-spirograph(80)
+spirograph(10)
 
 screen.exitonclick()
