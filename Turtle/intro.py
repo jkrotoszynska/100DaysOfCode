@@ -10,7 +10,17 @@ def square():
         timmy_the_turtle.forward(100)
         timmy_the_turtle.left(90)
 
-square()
+#dashed line
+def dashed_line():
+    for x in range(10):
+        timmy_the_turtle.pendown()
+        timmy_the_turtle.forward(10)
+        timmy_the_turtle.penup()
+        timmy_the_turtle.forward(10)
+        
+
+#square()
+dashed_line()
 
 screen = Screen()
 screen.exitonclick()
