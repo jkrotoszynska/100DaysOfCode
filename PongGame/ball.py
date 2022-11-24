@@ -27,3 +27,9 @@ class Ball(Turtle):
         self.goto(0, 0)
         self.move_speed = 0.1
         self.bounce_x()
+
+    def end(self):
+        self.reset()
+        # self.goto(0,0)
+        # self.color("black")
+        # self.move_speed = 0
