@@ -23,3 +23,4 @@ I chose this course because i want to develop and consolidate my knowledge. Proj
   * [__CoordinateSystem__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/Turtle/CoordinateSystem)
   * [__Race__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/Turtle/Race)
 * [__SnakeGame__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/SnakeGame)
+* [__PongGame__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/PongGame)
