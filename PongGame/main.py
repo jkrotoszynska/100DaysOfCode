@@ -42,4 +42,8 @@ while game_is_on:
         ball.reset_position()
         r_scoreboard.increase_score()
 
+
+# Need to add GAME OVER
+# Need to change the ball road
+
 screen.exitonclick()
