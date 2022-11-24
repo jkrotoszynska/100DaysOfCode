@@ -9,7 +9,7 @@ __Other tools:__ [Reeborg](https://reeborg.ca/index_en.html)
 ***
 I chose this course because i want to develop and consolidate my knowledge. Projects are started from low level grows over the next day. Keep your fingers crossed for me! :crossed_fingers:	
 ***
-### Contents list:
+### Contents List:
 * [__MiniProjects__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/MiniProjects) - a small project done at the beginning in the new chapter
 * [__HangmanGame__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/HangmanGame)
 * [__CaesarCipher__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/CaesarCipher)
