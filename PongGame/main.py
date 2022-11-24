@@ -28,9 +28,6 @@ while game_is_on:
     time.sleep(0.1)
     ball.move()
 
-#Create and move a paddle
-#Create another paddle
-#Create the ball and make it move
 #Detect collision with wall and bounce
 #Detect collision with paddle
 #Detect when paddle misses
