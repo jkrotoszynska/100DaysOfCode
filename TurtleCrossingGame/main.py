@@ -9,6 +9,13 @@ screen.setup(width=600, height=600)
 screen.title("The Turtle Crossing Capstone")
 screen.tracer(0)
 
+player = Player()
+car_manager = CarManager()
+scoreboard = Scoreboard()
+
+screen.listen()
+screen.onkey(player.up, "Up")
+
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
