@@ -16,5 +16,11 @@ class Player(Turtle):
     def up(self):
         self.forward(MOVE_DISTANCE)
 
+    def finish(self):
+        if self.ycor() > FINISH_LINE_Y:
+            return True
+        else:
+            return False
+
     def reset_position(self):
         self.goto(STARTING_POSITION)
