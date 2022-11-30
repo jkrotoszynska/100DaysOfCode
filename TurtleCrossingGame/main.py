@@ -10,8 +10,8 @@ screen.title("The Turtle Crossing Capstone")
 screen.tracer(0)
 
 player = Player()
-car_manager = CarManager()
 scoreboard = Scoreboard()
+car_manager = CarManager()
 
 screen.listen()
 screen.onkey(player.up, "Up")
@@ -20,3 +20,10 @@ game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
+
+    car_manager.create_cars()
+    car_manager.running()
+
+    if player.ycor() == 280:
+        player.reset_position()
+        scoreboard.increase_score()
