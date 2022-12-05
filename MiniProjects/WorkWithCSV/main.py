@@ -27,5 +27,7 @@ print(temp_list)
 average = sum(temp_list) / len(temp_list)
 print(round(average, 1))
 
-data_dict = data.to_dict()
-print(data_dict)
+print(data["temp"].mean())
+
+max_temp = data["temp"].max()
+print(max_temp)
