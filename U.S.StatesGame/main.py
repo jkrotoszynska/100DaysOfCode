@@ -10,24 +10,28 @@ turtle.shape(img)
 
 data = pandas.read_csv("50_states.csv")
 state_column = data.state.to_list()
+guessed_states = []
 
-game_is_on = True
-while game_is_on:
-    answer_state = screen.textinput(title="Guess the State", prompt="What's another state's name?")
+while len(guessed_states) < len(state_column):
+    count = len(guessed_states)
+    answer_state = screen.textinput(title = f"{count}/50 States Correct", prompt = "What's another state's name?").title()
+
+    if answer_state == "Exit":
+        missing_states = []
+        for state in state_column:
+            if state not in guessed_states:
+                missing_states.append(state)
+        new_data = pandas.DataFrame(missing_states)
+        new_data.to_csv("states_to_learn.csv")
+        break
 
     if answer_state in state_column:
-        print("true!")
-        t = turtle.Turtle()
-        t.hideturtle()
-        t.penup()
-        state_xy = data[data.state == answer_state]
-        t.goto(int(state_xy.x), int(state_xy.y))
-        t.write(answer_state)
+        if answer_state not in guessed_states:
+            guessed_states.append(answer_state)
+            t = turtle.Turtle()
+            t.hideturtle()
+            t.penup()
+            state_xy = data[data.state == answer_state]
+            t.goto(int(state_xy.x), int(state_xy.y))
+            t.write(answer_state)
 
-def get_mouse_click_coor(x,y):
-    print(x,y)
-
-#turtle.onscreenclick(get_mouse_click_coor)
-#turtle.mainloop()
-
-screen.exitonclick()
