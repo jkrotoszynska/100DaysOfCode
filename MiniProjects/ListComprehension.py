@@ -8,3 +8,7 @@ print(letters)
 
 double = [num * 2 for num in range(1,5)]
 print(double)
+
+names = ["Alex", "Beth", "Dave", "Caroline", "Angela", "Dan"]
+short_names = [name for name in names if len(name) < 5]
+print(short_names)
