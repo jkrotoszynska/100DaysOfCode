@@ -1,0 +1,2 @@
+netflix | justyna@email.com | 123456 
+amazon | justyna@email.com | 654321 
