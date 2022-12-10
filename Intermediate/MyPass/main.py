@@ -1,18 +1,30 @@
 from tkinter import *
+from tkinter import messagebox
+import random
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 def generate():
-    return True
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+    
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def save_data():
     website_data = website.get()
     email_user_data = email_user.get()
     password_data = password.get()
 
-    with open("saved_data.txt", "a") as data:
-        data = data.write(f"{website_data} | {email_user_data} | {password_data} \n")
+    if len(website_data) == 0 or len(password_data) == 0:
+        messagebox.showinfo(title="Oops", message="Please make sure you haven't left any fields empty.")
+    else:
+        is_ok = messagebox.askokcancel(title=website_data, message=f"These are the details entered: \nEmail: {email_user_data} " f"\nPassword: {password_data} \nIs it ok to save?")
+    
+        if is_ok:
+            with open("saved_data.txt", "a") as data:
+                data = data.write(f"{website_data} | {email_user_data} | {password_data} \n")
 
-    website.delete(0,END)
-    password.delete(0, END)
+            website.delete(0,END)
+            password.delete(0, END)
     
         
 # ---------------------------- UI SETUP ------------------------------- #
