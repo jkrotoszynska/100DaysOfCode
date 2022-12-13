@@ -3,14 +3,18 @@ import pandas
 import random
 
 BACKGROUND_COLOR = "#B1DDC6"
-random_word = None
+current_card = {}
+to_learn = {}
 
+try:
+    data = pandas.read_csv("data/words_to_learn.csv")
+except FileNotFoundError:
+    orginal_data = pandas.read_csv("data/french_words.csv")
+    to_learn = orginal_data.to_dict(orient="records")
+else:
+    to_learn = data.to_dict(orient="records")
 
 # ---------------------------- WORDS GENERATOR ------------------------------- #
-data = pandas.read_csv("data/french_words.csv")
-to_learn = data.to_dict(orient="records")
-current_card = {}
-
 def next_card():
     global current_card, flip_timer
     window.after_cancel(flip_timer)
