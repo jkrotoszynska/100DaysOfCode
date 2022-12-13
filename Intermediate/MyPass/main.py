@@ -7,13 +7,13 @@ import json
 def find_password():
     website_data = website.get()
     if len(website_data) == 0:
-        messagebox.showinfo(title="Oops", message="Please make sure you haven't left field empty.")
+        messagebox.showinfo(title="Oops", message="Please make sure you have not left field empty.")
     else:
         try:
             with open("data.json", "r") as data_file:
                 data = json.load(data_file)
         except FileNotFoundError:
-            messagebox.showinfo(title="Oops", message="You do not have any saved data")
+            messagebox.showinfo(title="Error", message="No Data File Found")
         else:
             if website_data in data:
                 email = data[website_data]["email"]
