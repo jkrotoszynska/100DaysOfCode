@@ -11,19 +11,31 @@ I chose this course because i want to develop and consolidate my knowledge. Proj
 ***
 ### Contents List:
 * __Beginner__
-  * [__MiniProjects__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/MiniProjects) - a small project done at the beginning in the new chapter
-  * [__HangmanGame__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/HangmanGame)
-  * [__CaesarCipher__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/CaesarCipher)
-  * [__Blackjack__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/Blackjack)
-  * [__HigherLower__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/HigherLower)
+  * [__MiniProjects__]() - a small project done at the beginning in the new chapter
+  * [__HangmanGame__]()
+  * [__CaesarCipher__]()
+  * [__Blackjack__]()
+  * [__HigherLower__]()
 * __Intermediate__
-  * [__CoffeeMachine__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/CoffeeMachine)
-  * [__CoffeeMachineOOP__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/CoffeeMachineOOP)
-  * [__QuizGame__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/QuizGame)
-  * [__Turtle__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/Turtle)
-    * [__Introduction__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/Turtle/Introduction)
-    * [__CoordinateSystem__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/Turtle/CoordinateSystem)
-    * [__Race__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/Turtle/Race)
-  * [__SnakeGame__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/SnakeGame)
-  * [__PongGame__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/PongGame)
+  * [__CoffeeMachine__]()
+  * [__CoffeeMachineOOP__]()
+  * [__QuizGame__]()
+  * [__Turtle__]()
+    * [__Introduction__]()
+    * [__CoordinateSystem__]()
+    * [__Race__]()
+  * [__SnakeGame__]()
+  * [__PongGame__]()
+
+  * [__ErrorHandling__]()
+  * [__FlashCardApp__]()
+  * [__MailMergeProject__]()
+  * [__MyPass__]()
+  * [__NatoAlphabet__]()
+  * [__NatoAlphabetErrors__]()
+  * [__Pomodoro__]()
+  * [__Tkinter__]()
+  * [__TurtleCrossingGame__]()
+  * [__U.S.StatesGame__]()
 * __Intermediate +__
+  * [__SendingMailsByPython__]()
