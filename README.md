@@ -16,6 +16,7 @@ I chose this course because i want to develop and consolidate my knowledge. Proj
   * [__CaesarCipher__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/CaesarCipher)
   * [__Blackjack__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/Blackjack)
   * [__HigherLower__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/HigherLower)
+* __Intermediate__
   * [__CoffeeMachine__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/CoffeeMachine)
   * [__CoffeeMachineOOP__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/CoffeeMachineOOP)
   * [__QuizGame__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/QuizGame)
@@ -25,5 +26,4 @@ I chose this course because i want to develop and consolidate my knowledge. Proj
     * [__Race__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/Turtle/Race)
   * [__SnakeGame__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/SnakeGame)
   * [__PongGame__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/PongGame)
-* __Intermediate__
 * __Intermediate +__
