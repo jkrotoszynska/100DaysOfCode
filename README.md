@@ -26,8 +26,6 @@ I chose this course because i want to develop and consolidate my knowledge. Proj
     * [__Race__]()
   * [__SnakeGame__]()
   * [__PongGame__]()
-
----------- Need to add links and organise titles, sorry for the mess
   * [__ErrorHandling__]()
   * [__FlashCardApp__]()
   * [__MailMergeProject__]()
@@ -40,3 +38,6 @@ I chose this course because i want to develop and consolidate my knowledge. Proj
   * [__U.S.StatesGame__]()
 * __Intermediate +__
   * [__SendingMailsByPython__]()
+
+
+---------- Need to add links and organise titles, sorry for the mess
