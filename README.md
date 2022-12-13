@@ -27,6 +27,7 @@ I chose this course because i want to develop and consolidate my knowledge. Proj
   * [__SnakeGame__]()
   * [__PongGame__]()
 
+# Need to add links and organise titles, sorry for the mess
   * [__ErrorHandling__]()
   * [__FlashCardApp__]()
   * [__MailMergeProject__]()
