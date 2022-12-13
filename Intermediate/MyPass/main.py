@@ -3,7 +3,7 @@ from tkinter import messagebox
 from random import choice, randint, shuffle
 import pyperclip
 import json
-# ---------------------------- SEARCH DATA  ------------------------------- #
+# ---------------------------- SEARCH DATA ------------------------------- #
 def find_password():
     website_data = website.get()
     if len(website_data) == 0:
