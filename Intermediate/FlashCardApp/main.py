@@ -18,13 +18,20 @@ def next_card():
     canvas.itemconfig(title, text="French", fill="black")
     canvas.itemconfig(word, text=current_card["French"], fill="black")
     canvas.itemconfig(card_img, image=front_img)
-    window.after(3000, func=flip_card)
+    flip_timer = window.after(3000, func=flip_card)
 
 # ---------------------------- FLIP CARD ------------------------------- #
 def flip_card():
     canvas.itemconfig(title, text="English", fill="white")
     canvas.itemconfig(word, text=current_card["English"], fill="white")
     canvas.itemconfig(card_img, image=back_img)
+
+# ---------------------------- KNOWN CARD ------------------------------- #
+def is_known():
+    to_learn.remove(current_card)
+    data = pandas.DataFrame(to_learn)
+    data.to_csv("data/words_to_learn.csv", index=False)
+    next_card()
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
@@ -46,7 +53,7 @@ canvas.grid(column=0, columnspan=2, row=0)
 
 
 yes_img = PhotoImage(file="images/right.png")
-yes_button = Button(image=yes_img, highlightthickness=0, command=next_card)
+yes_button = Button(image=yes_img, highlightthickness=0, command=is_known)
 yes_button.config(pady=50)
 no_img = PhotoImage(file="images/wrong.png")
 no_button = Button(image=no_img, highlightthickness=0, command=next_card)
