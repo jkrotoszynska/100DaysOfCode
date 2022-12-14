@@ -11,7 +11,7 @@ I chose this course because i want to develop and consolidate my knowledge. Proj
 ***
 ### Contents List:
 * __Beginner__
-  * [__MiniProjects__]() - a small project done at the beginning in the new chapter
+  * [__MiniProjects__]() - a small projects done at the beginning in the new chapter
   * [__HangmanGame__]()
   * [__CaesarCipher__]()
   * [__Blackjack__]()
