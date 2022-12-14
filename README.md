@@ -41,5 +41,3 @@ I chose this course because i want to develop and consolidate my knowledge. Proj
   * [__MiniProjects__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/IntermediatePlus/MiniProjects)
   * [__SendingMailsByPython__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/IntermediatePlus/SendingMailsByPython)
 
-
----------- Need to add links and organise titles, sorry for the mess
