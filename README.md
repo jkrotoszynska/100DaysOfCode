@@ -11,11 +11,11 @@ I chose this course because i want to develop and consolidate my knowledge. Proj
 ***
 ### Contents List:
 * __Beginner__
-  * [__MiniProjects__]() - a small projects done at the beginning in the new chapter
-  * [__HangmanGame__]()
-  * [__CaesarCipher__]()
-  * [__Blackjack__]()
-  * [__HigherLower__]()
+  * [__MiniProjects__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/Beginner/MiniProjects) - a small projects done at the beginning in the new chapter
+  * [__HangmanGame__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/Beginner/HangmanGame)
+  * [__CaesarCipher__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/Beginner/CaesarCipher)
+  * [__Blackjack__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/Beginner/Blackjack)
+  * [__HigherLower__](https://github.com/jkrotoszynska/100DaysOfCode/tree/main/Beginner/HigherLower)
 * __Intermediate__
   * [__CoffeeMachine__]()
   * [__CoffeeMachineOOP__]()
