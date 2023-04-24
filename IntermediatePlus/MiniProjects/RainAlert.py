@@ -38,3 +38,5 @@ if will_rain:
         )
     
     print(message.status)
+
+# on pythonanywhere you can put a program to run automatically
